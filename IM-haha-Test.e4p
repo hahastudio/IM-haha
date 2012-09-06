@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project IM-haha-Test -->
+<!-- Saved: 2010-12-30, 18:37:16 -->
+<!-- Copyright (C) 2010 hahaStudio, guyuhao088@gmail.com -->
+<Project version="4.6">
+  <Language>en</Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description>This is an IM software using socket &amp; PyQt4, built by hahaStudio.</Description>
+  <Version>0.9</Version>
+  <Author>hahaStudio</Author>
+  <Email>guyuhao088@gmail.com</Email>
+  <Sources>
+    <Source>__init__.py</Source>
+    <Source>UI_Client.py</Source>
+    <Source>UI_Server.py</Source>
+    <Source>IM-haha-Server.py</Source>
+    <Source>IM-haha-Client.py</Source>
+    <Source>setup-client.py</Source>
+    <Source>setup-server.py</Source>
+    <Source>Ui_UI-Server.py</Source>
+  </Sources>
+  <Forms>
+    <Form>UI-Server.ui</Form>
+    <Form>UI-Client.ui</Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>
