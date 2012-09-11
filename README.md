@@ -15,9 +15,13 @@
 
 然后在命令提示符（CMD）中执行如下命令：
 
-`python setup-server.py py2exe` #编译`IM-haha-Server.py`
+编译`IM-haha-Server.py`
 
-`python setup-client.py py2exe` #编译`IM-haha-Client.py`
+	> python setup-server.py py2exe
+
+编译`IM-haha-Client.py`
+
+	> python setup-client.py py2exe
 
 ##使用说明
 
