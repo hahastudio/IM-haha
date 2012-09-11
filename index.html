@@ -1,33 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <title>Im-haha by hahastudio</title>
-  </head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  </head>
   <body>
 
-    <header>
-      <div class="container">
+      <header>
         <h1>Im-haha</h1>
-        <h2>A prototype of Instant Message by hahastudio</h2>
+        <p>A prototype of Instant Message by hahastudio</p>
+      </header>
 
-        <section id="downloads">
-          <a href="https://github.com/hahastudio/IM-haha/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/hahastudio/IM-haha/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/hahastudio/IM-haha" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <div id="banner">
+        <span id="logo"></span>
 
-    <div class="container">
-      <section id="main_content">
+        <a href="https://github.com/hahastudio/IM-haha" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/hahastudio/IM-haha/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/hahastudio/IM-haha/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <h1>IM-haha</h1>
 
 <p>这是项目 <a href="https://github.com/hahastudio/IM-haha">IM-haha</a> ，
@@ -35,9 +46,44 @@
 
 <p>本项目采用Python编写，使用标准库socket进行数据传输，UI使用PyQt库。</p>
 
+<p>主程序分成两部分，一个是<code>IM-haha-Server.py</code>，是聊天的服务器端，也是发起者；<code>IM-haha-Client.py</code>是客户端，向服务端请求连接许可之后可与服务端聊天。</p>
+
 <p><strong>很简单的啦= =甚至都没有加密传输</strong></p>
 
-<h2>版本库地址</h2>
+<h2>编译成二进制文件</h2>
+
+<p><strong>请先确保您安装了Python2.x，PyQt4，Py2exe</strong></p>
+
+<p>然后在命令提示符（CMD）中执行如下命令：</p>
+
+<p>编译<code>IM-haha-Server.py</code></p>
+
+<pre><code>&gt; python setup-server.py py2exe
+</code></pre>
+
+<p>编译<code>IM-haha-Client.py</code></p>
+
+<pre><code>&gt; python setup-client.py py2exe
+</code></pre>
+
+<h2>使用说明</h2>
+
+<ul>
+<li>发起者运行<code>IM-haha-Server.py</code>或者<code>IM-haha-Server.exe</code>
+</li>
+<li>程序会自动识别您的外网IP，如果不对，请自己填写正确的IP</li>
+<li>填写一个未使用的端口号</li>
+<li>起一个昵称</li>
+<li>点击<code>新建</code>
+</li>
+<li>客户端运行<code>IM-haha-Client.py</code>或者<code>IM-haha-Client.exe</code>
+</li>
+<li>填写服务端的IP与端口，并起一个昵称</li>
+<li>点击<code>连接</code>
+</li>
+<li>聊天过程中，在下方输入框内输入内容，之后点击<code>发送</code>
+</li>
+</ul><h2>版本库地址</h2>
 
 <p>支持三种访问协议：</p>
 
@@ -52,8 +98,12 @@
 <pre><code>$ git clone git://github.com/hahastudio/IM-haha.git
 </code></pre>
       </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/hahastudio">hahastudio</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
